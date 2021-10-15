@@ -12,6 +12,7 @@ yarn-error.log*
 # Dependency directories
 node_modules/
 
+.vscode
 .DS_Store
 
 # do not add dependency lock files to this repo because it should remain independent from specific dependency managers

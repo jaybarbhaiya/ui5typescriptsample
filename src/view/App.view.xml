@@ -5,18 +5,16 @@
 	xmlns:mvc="sap.ui.core.mvc">
 
 	<App id="app">
-		<MessagePage
-			title="{i18n>app_title}"
-			text="{i18n>app_title}"
-			icon="sap-icon://accept"
-			id="page"
-			description="{i18n>app_description}">
-			<buttons>
-				<Button
-					text="{i18n>btn_text}"
-					press="sayHello" />
-			</buttons>
-		</MessagePage>
+		<Page>
+			<List id="myList" headerText="My List"
+				mode="MultiSelect"
+				selectionChange=".handleSelectionChange">
+				<items>
+					<StandardListItem title="The title" description="The Description" type="Navigation"></StandardListItem>
+					<StandardListItem title="The title" description="The Description" type="Navigation"></StandardListItem>
+				</items>
+			</List>
+		</Page>
 	</App>
 
 </mvc:View>
