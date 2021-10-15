@@ -1,0 +1,20 @@
+<mvc:View
+	controllerName="com.myorg.myapp.controller.App"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+
+	<App id="app">
+		<Page>
+			<List id="myList" headerText="My List"
+				mode="MultiSelect"
+				selectionChange=".handleSelectionChange">
+				<items>
+					<StandardListItem title="The title" description="The Description" type="Navigation"></StandardListItem>
+					<StandardListItem title="The title" description="The Description" type="Navigation"></StandardListItem>
+				</items>
+			</List>
+		</Page>
+	</App>
+
+</mvc:View>
